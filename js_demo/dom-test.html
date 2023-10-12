@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .target{
+            margin-top: 100px;
+            color: blue;
+            font-weight: bold;
+            font-size: 40px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Test</title>
+    <script type="text/javascript">
+    function getData(){
+        var data=document.getElementById('t1').value;
+       var target= document.getElementById('target')
+       target.innerHTML=data;
+       target.className='target';
+    }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1">
+    <button onclick="getData()">get Value</button>
+    <div id="target"></div>
+</body>
+</html>
