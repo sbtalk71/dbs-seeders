@@ -1,0 +1,11 @@
+
+<input type="text" [disabled]="isDisabled" #inputField>
+
+<button (click)="toggle(inputField.value)">Toggle</button>
+<p></p>
+
+<input type="text" [(ngModel)]="info">
+
+<h2 [class]="mystyle">{{info}}</h2>
+<hr>
+<h2>{{message}}</h2>
