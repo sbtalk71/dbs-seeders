@@ -1,0 +1,128 @@
+{"products":[
+    {
+        "id": 1,
+        "title": "iPhone 9",
+        "description": "An apple mobile which is nothing like apple",
+        "price": 549,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "smartphones"
+    },
+    {
+        "id": 2,
+        "title": "iPhone X",
+        "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+        "price": 899,
+        "discountPercentage": 17.94,
+        "rating": 4.44,
+        "stock": 34,
+        "brand": "Apple",
+        "category": "smartphones"
+    },
+    {
+        "id": 3,
+        "title": "Samsung Universe 9",
+        "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+        "price": 1249,
+        "discountPercentage": 15.46,
+        "rating": 4.09,
+        "stock": 36,
+        "brand": "Samsung",
+        "category": "smartphones"
+
+    },
+    {
+        "id": 22,
+        "title": "Elbow Macaroni - 400 gm",
+        "description": "Product details of Bake Parlor Big Elbow Macaroni - 400 gm",
+        "price": 14,
+        "discountPercentage": 15.58,
+        "rating": 4.57,
+        "stock": 146,
+        "brand": "Bake Parlor Big",
+        "category": "groceries"
+    }, {
+        "id": 23,
+        "title": "Orange Essence Food Flavou",
+        "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
+        "price": 14,
+        "discountPercentage": 8.04,
+        "rating": 4.85,
+        "stock": 26,
+        "brand": "Baking Food Items",
+        "category": "groceries"
+    }, {
+        "id": 24,
+        "title": "cereals muesli fruit nuts",
+        "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+        "price": 46,
+        "discountPercentage": 16.8,
+        "rating": 4.94,
+        "stock": 113,
+        "brand": "fauji",
+        "category": "groceries"
+    }, {
+        "id": 25,
+        "title": "Gulab Powder 50 Gram",
+        "description": "Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds",
+        "price": 70,
+        "discountPercentage": 13.58,
+        "rating": 4.87,
+        "stock": 47,
+        "brand": "Dry Rose",
+        "category": "groceries"
+    }, {
+        "id": 26,
+        "title": "Plant Hanger For Home",
+        "description": "Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
+        "price": 41,
+        "discountPercentage": 17.86,
+        "rating": 4.08,
+        "stock": 131,
+        "brand": "Boho Decor",
+        "category": "home-decoration"
+    }, {
+        "id": 27,
+        "title": "Flying Wooden Bird",
+        "description": "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
+        "price": 51,
+        "discountPercentage": 15.58,
+        "rating": 4.41,
+        "stock": 17,
+        "brand": "Flying Wooden",
+        "category": "home-decoration"
+    }, {
+        "id": 28,
+        "title": "3D Embellishment Art Lamp",
+        "description": "3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)",
+        "price": 20,
+        "discountPercentage": 16.49,
+        "rating": 4.82,
+        "stock": 54,
+        "brand": "LED Lights",
+        "category": "home-decoration"
+    }, {
+        "id": 29,
+        "title": "Handcraft Chinese style",
+        "description": "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
+        "price": 60,
+        "discountPercentage": 15.34,
+        "rating": 4.44,
+        "stock": 7,
+        "brand": "luxury palace",
+        "category": "home-decoration"
+    }, {
+        "id": 30,
+        "title": "Key Holder",
+        "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
+        "price": 30,
+        "discountPercentage": 2.92,
+        "rating": 4.92,
+        "stock": 54,
+        "brand": "Golden",
+        "category": "home-decoration"
+    }
+]
+}
