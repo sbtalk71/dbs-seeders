@@ -1,5 +1,6 @@
 
 export class Person{
+    
     constructor(private id:number,private name:string){}
 
 

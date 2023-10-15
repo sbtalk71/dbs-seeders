@@ -10,6 +10,10 @@ import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { PowerPipe } from './power.pipe';
 import { ProductsComponent } from './products/products.component';
+import { DemoService } from './demo.service';
+import { ProductService } from './product.service';
+import { ParentComponent } from './lifecycle/parent/parent.component';
+import { ChildComponent } from './lifecycle/child/child.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,15 @@ import { ProductsComponent } from './products/products.component';
     DirectivesComponent,
     PipesComponent,
     PowerPipe,
-    ProductsComponent
+    ProductsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DemoService,ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
