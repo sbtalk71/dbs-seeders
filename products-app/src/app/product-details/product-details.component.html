@@ -1,0 +1,12 @@
+<h1>Product Details Page</h1>
+<a routerLink="overview">Overview</a>
+<a routerLink="specs">Specs</a>
+<div class="card text-center">
+    <div class="card-body">
+        <h2 class="card-title">{{selectedProduct.model}}</h2>
+        <p class="card-text">{{selectedProduct.brand}}</p>
+        <p class="card-text">{{selectedProduct.price}}</p>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
