@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../user';
 
 @Component({
   selector: 'app-login',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  user:User=new User('abc@gmail.com','welcome1');
+
+  onSubmit(){
+    console.log(this.user);
+  }
 }

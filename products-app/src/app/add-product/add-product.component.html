@@ -1,0 +1,47 @@
+<div>
+    <h2>Add Product page</h2>
+    <form (ngSubmit)="onSubmit()" [formGroup]="productForm">
+        <div>
+            <label>Product Id</label>
+            <input type="text" formControlName="id">
+            <div *ngIf="id.errors?.['required']" class="error-text">Value is Required</div>
+        </div>
+        <div>
+            <label>Title</label>
+            <input type="text" formControlName="title">
+        </div>
+        <div>
+            <label>Category</label>
+            <input type="text" formControlName="category">
+        </div>
+        <div>
+            <label>Brand</label>
+            <input type="text" formControlName="brand">
+        </div>
+        <div>
+            <label>Description</label>
+            <input type="text" formControlName="description">
+            <div *ngIf="desc.errors?.['maxlength']" class="error-text">Length exeeded</div>
+        </div>
+        <div>
+            <label>Price</label>
+            <input type="text" formControlName="price">
+        </div>
+        <div>
+            <label>Rating</label>
+            <input type="text" formControlName="rating">
+            
+        </div>
+        <div>
+            <label>Discount</label>
+            <input type="text" formControlName="discountPercentage">
+        </div>
+        <div>
+            <label>Available Qty</label>
+            <input type="text" formControlName="stock">
+        </div>
+        <div>
+            <button>Add Product</button>
+        </div>
+    </form>
+</div>

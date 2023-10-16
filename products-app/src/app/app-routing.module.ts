@@ -9,6 +9,9 @@ import { OverviewComponent } from './overview/overview.component';
 import { SpecsComponent } from './specs/specs.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { productGuardGuard } from './product-guard.guard';
+import { StoreComponent } from './store/store.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -17,6 +20,10 @@ const routes: Routes = [
   {path:'products/:id',loadChildren:()=>import('./product/product.module').then(m=>m.ProductModule)},
   {path:'',redirectTo:'/products',pathMatch:'full'},
   {path:'unauthorized',component:UnauthorizedComponent},
+  {path:'store',component:StoreComponent,children:[
+    {path:'add',component:AddProductComponent},
+    {path:'update',component:UpdateProductComponent}
+  ]},
   {path:'**',component:NotfoundComponent}
 
 ];

@@ -13,6 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { productGuardGuard } from './product-guard.guard';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { AddProductComponent } from './add-product/add-product.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
+import { StoreComponent } from './store/store.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +29,16 @@ import { productGuardGuard } from './product-guard.guard';
     SpecsComponent,
     LoginComponent,
     RegisterComponent,
-    UnauthorizedComponent
+    UnauthorizedComponent,
+    AddProductComponent,
+    UpdateProductComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
