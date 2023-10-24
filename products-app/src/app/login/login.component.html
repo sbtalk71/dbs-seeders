@@ -1,4 +1,5 @@
 <div class="container">
+<<<<<<< Updated upstream
     <div class="row">
         <div class="col-12 col-md-4 offset-md-4 mt-5 bg-light">
             <h1>Login Page</h1>
@@ -20,3 +21,23 @@
                 </div>
             </div>
         </div>
+=======
+<h1>Login Page</h1>
+<form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <div class="form-group">
+        <label>email</label>
+        <input type="text" [(ngModel)]="user.email" name="email" required #emailInput="ngModel" class="form-control">
+        <small class="error-text" [class.d-none]="emailInput.value||emailInput.untouched">Value is Required</small>
+    </div>
+    <div class="form-group">
+        <label>password</label>
+        <input type="text" [(ngModel)]="user.password" name="password" required #pwdInput="ngModel" class="form-control">
+        <small class="error-text" [class.d-none]="pwdInput.value||pwdInput.untouched">Value is Required</small>
+    </div>
+    <div class="form-group">
+        <button>Login</button>
+    </div>
+</form>
+
+</div>
+>>>>>>> Stashed changes

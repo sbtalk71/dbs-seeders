@@ -1,5 +1,5 @@
 import { Product } from "./product";
-
+/*
 export const data:Product[]=[
 
     {id:100,model:'iPhone 15',brand:'Apple',price:79000},
@@ -8,3 +8,4 @@ export const data:Product[]=[
     {id:103,model:'Wipers',brand:'BrandX',price:79000},
     {id:104,model:'Cycle',brand:'BSA',price:8000}
 ]
+*/

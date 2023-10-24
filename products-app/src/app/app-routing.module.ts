@@ -23,7 +23,7 @@ const routes: Routes = [
   {path:'store',component:StoreComponent,children:[
     {path:'add',component:AddProductComponent},
     {path:'update',component:UpdateProductComponent}
-  ]},
+  ],canActivate:[productGuardGuard]},
   {path:'**',component:NotfoundComponent}
 
 ];

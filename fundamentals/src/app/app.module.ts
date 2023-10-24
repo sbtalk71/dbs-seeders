@@ -14,6 +14,7 @@ import { DemoService } from './demo.service';
 import { ProductService } from './product.service';
 import { ParentComponent } from './lifecycle/parent/parent.component';
 import { ChildComponent } from './lifecycle/child/child.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ChildComponent } from './lifecycle/child/child.component';
     PowerPipe,
     ProductsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

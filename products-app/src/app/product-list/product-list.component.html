@@ -1,9 +1,9 @@
 <div class="row mt-3">
-    <div class="col-md-3 mb-3" *ngFor="let item of productdata" (click)="onClick(item.id)">
+    <div class="col-md-4 mb-3" *ngFor="let item of productdata" (click)="onClick(item.id)">
        
-        <div class="card text-center">
+        <div class="card text-center bg-light">
             <div class="card-body">
-                <h2 class="card-title">{{item.model}}</h2>
+                <h2 class="card-title">{{item.title}}</h2>
                 <p class="card-text">{{item.brand}}</p>
                 <p class="card-text">{{item.price}}</p>
             </div>

@@ -14,11 +14,16 @@
       </div>
     </div>
   </nav>
-<div class="card text-center" style="max-width: 30%;margin-left: 30px;">
+<div class="card text-center bg-light" style="max-width: 30%;margin-left: 30px;">
     <div class="card-body">
-        <h2 class="card-title">{{selectedProduct.model}}</h2>
+        <h2 class="card-title">{{selectedProduct.title}}</h2>
+        <p class="card-text">{{selectedProduct.category}}</p>
         <p class="card-text">{{selectedProduct.brand}}</p>
         <p class="card-text">{{selectedProduct.price}}</p>
+        <p class="card-text">{{selectedProduct.discountPercentage}}</p>
+        <p class="card-text">{{selectedProduct.stock}}</p>
+        <p class="card-text">{{selectedProduct.description}}</p>
+        
     </div>
 </div>
 

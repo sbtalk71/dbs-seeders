@@ -15,13 +15,13 @@
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" aria-current="page" href="#" routerLink="register">Register</a>
+              <a class="nav-link" routerLinkActive="active" aria-current="page" href="#" routerLink="register" *ngIf="!isLoggedIn">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="login">Login</a>
+              <a class="nav-link" routerLinkActive="active" routerLink="login" *ngIf="!isLoggedIn">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="logout">Logout</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="logout" *ngIf="isLoggedIn" (click)="logout()">Logout</a>
               </li>
             </ul>
       </div>

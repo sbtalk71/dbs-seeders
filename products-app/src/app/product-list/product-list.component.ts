@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 import { ProductService } from '../product.service';
 import { Router } from '@angular/router';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-product-list',
@@ -11,10 +12,11 @@ import { Router } from '@angular/router';
 export class ProductListComponent implements OnInit{
   productdata:Product[]=[];
   
-  constructor(private service:ProductService,private router:Router){}
+  constructor(private service:HttpService,private router:Router){}
 
   ngOnInit(): void {
-      this.productdata=this.service.getAllProducts();
+      //this.productdata=this.service.getAllProducts();
+      this.service.getProductsList().subscribe(data=>this.productdata=data);
   }
 
   onClick(id:number){

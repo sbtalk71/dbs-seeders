@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup,FormControl,Validators} from '@angular/forms'
+import { HttpService } from '../http.service';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-add-product',
@@ -9,6 +11,8 @@ import {FormGroup,FormControl,Validators} from '@angular/forms'
 export class AddProductComponent implements OnInit{
 
   productForm:FormGroup;
+  constructor(private service:HttpService){}
+
   ngOnInit(): void {
      this.initForm();
   }
@@ -35,6 +39,15 @@ export class AddProductComponent implements OnInit{
     return this.productForm.get('description');
   }
   onSubmit(){
-    console.log(this.productForm.value);
+    let data=this.productForm.value;
+    let product:Product={id:+data.id,title:data.title,
+      category:data.category,brand:data.brand,
+      price:+data.price,stock:+data.stock,discountPercentage:+data.discountPercentage,
+      description:data.description,rating:+data.rating
+    }
+    this.service.addProduct(product).subscribe(data=>{
+      console.log(data);
+    })
+    //console.log(this.productForm.value);
   }
 }
